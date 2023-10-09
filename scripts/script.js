@@ -3,7 +3,7 @@
 function verificarContraseña() {
     var contra = document.getElementById("password").value;
 
-    var sinEspacios = /^\S*$/; // Expresión regular que no permite espacios en blanco
+    var sinEspacios = /^\S*$/;
     var longMin = /(?=.{8,})/;
     var caractEspec = /[!@#~]/;
     var mayus = /[A-Z]/;
