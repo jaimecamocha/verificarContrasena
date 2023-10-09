@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +16,5 @@
     <button onclick="verificarContraseña()">Verificar</button>
     <p id="mensaje"></p>
 
-    <script>
-        function verificarContraseña() {
-            var contra = document.getElementById("password").value;
-            
-            var longMin = /(?=.{8,})/;
-            var caractEspec = /[!@#~]/;
-            var mayus = /[A-Z]/;
-
-            if (longMin.test(contra) &&
-                caractEspec.test(contra) &&
-                mayus.test(contra)) {
-                document.getElementById("mensaje").innerHTML = "Contraseña aceptada";
-            } else {
-                document.getElementById("mensaje").innerHTML = "Contraseña denegada. La contraseña debe tener al menos 8 caracteres, contener '@', '#' o '~', y al menos una letra mayúscula.";
-            }
-        }
-    </script>
+    <script src="scripts/script.js"></script>
 </html>
